@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pluie sur la fenêtre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <div class="window" id="window">
+      <div class="room"><span class="lamp"></span></div>
+      <canvas id="glass"></canvas>
+      <div class="frame"></div>
+    </div>
+    <div class="sill" id="sill"></div>
+  </main>
+
+  <canvas id="rain"></canvas>
+
+  <div class="controls">
+    <button id="sound" type="button" aria-pressed="false">Activer le son de la pluie</button>
+    <label>Intensité
+      <input id="intensity" type="range" min="0" max="100" value="55">
+    </label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
